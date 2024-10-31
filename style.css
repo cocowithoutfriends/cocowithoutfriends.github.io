@@ -1,0 +1,579 @@
+header h1 {  /*propriétés du titre du site, aligné au centre, marge de 2% en bas par rapport aux blocs, taille de texte et sa couleur*/
+    text-align: center;
+    margin-bottom: 2%;
+    font-size: 300%;
+    color: rgb(94, 115, 117);
+}
+
+
+body { /* Couleur de fond de la page */
+    background-color: rgb(249, 246, 206);
+}
+
+header div { /* Propriétés des boutons du menu, couleur de fond, taille de texte, bordure arrondie, marge de 2.4% à gauche, largeur de 16.3%, texte aligné au centre, marge intérieure de 0.3%*/
+    width: 16.3%;
+    background-color: rgb(245, 227, 113);
+    display:inline-block;
+    padding: 0.3%;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1em;
+    margin-left: 2.4%;
+    font-family:Arial;
+}
+
+header div:hover { /* Couleur de fond des boutons du menu au survol de la souris et durée avant cet affichage*/
+    background-color:rgb(255, 173, 10);
+    transition-duration: 0.4s;
+    color: rgb(245, 227, 113);
+}
+
+#divMenu { /* Couleur de fond du bloc de la page sur laquelle on se trouve*/
+        background-color:rgb(255, 173, 10);
+        color: rgb(245, 227, 113);
+}
+
+a { /* enlève la couleur par défaut et le soulignement des liens hypertextes */
+    text-decoration: none;
+    color: black;
+}
+
+header h2 { /* Propriétés du titre de la page du site, taille de texte, marge de 3% en haut et 2.5% à gauche, couleur de texte et soulignement*/
+    font-size: 220%;
+    margin: 3% 0 0 2.5%;
+    color: rgb(233, 73, 67);
+    text-decoration: underline;
+    font-family: Arial;
+}
+
+article p{ /* Propriétés du texte de l'article, taille de texte, marge de 2% en haut et 3% à gauche, couleur de texte*/
+    margin: 2% 0 0 3%;
+    font-size: 150%;
+    padding: 0 2% 0 0;
+}
+
+footer p { /* Propriétés du texte du pied de page(pour que la suite du texte passe sous l'image), taille de texte, marge de 2.2% à gauche*/
+    font-size: 150%;
+    margin: 0 0 0 2.2%;
+}
+
+#footer1 { /* Propriétés du pied de page, pour qu'il soit aligné aux autres parties de la page et se retrouve en bas*/
+    display: inline-block;
+}
+#article1 { /* Propriétés de l'article page1, sa largeur et pour qu'il soit à gauche du "aside"*/
+    width: 75%;;
+    float: left;
+}
+
+#article2 { /* Propriétés de l'article page2, sa largeur et pour qu'il soit à gauche du "aside"*/
+    width: 75%;;
+    float: right;
+}
+
+#aside1 { /* Propriétés du bloc "aside" page1, sa largeur et pour qu'il soit à droite de l'article*/
+    width: 24%;;
+    float: right;
+}
+
+#aside2 { /* Propriétés du bloc "aside"page2, sa largeur et pour qu'il soit à droite de l'article*/
+    width: 24%;;
+    float: left;
+    margin-left: 1%;
+}
+
+#img1 { /* Propriétés de l'image de la page 1, sa largeur, marge de 7% en haut*/
+    width: 90%;
+    margin : 7% 0 0 0;
+}
+
+#img2 { /* Propriétés de l'image de la page 2, sa largeur, marge de 9% en haut et 20% à gauche*/
+    width: 65%;
+    margin : 9% 0 0 20%;
+}
+
+aside p { /* Propriétés du texte de l'aside pour qu'il soit aligné au centre de la balise qui le contient*/
+    text-align: center;
+    font-size: 13px;
+}
+
+#titreSimu { /* Propriétés du titre du simulateur page3, alignement, taille de texte, couleur de texte, police de caractère,*/
+    text-align: center;
+    font-size: 35px;
+    color: rgb(59, 183, 197);
+    font-family: Courier;
+}
+
+.imgTableau { /* Propriétés des images page 5, largeur de 100% et arrondissement des bordures*/
+    width: 100%;
+    border-radius: 20px;
+}
+
+select { /* Propriétés des listes déroulantes du simulateur, arrondissement des bordures, couleur de texte, couleur de fond, largeur de 39%, marge de 1% autour, taille de texte*/
+    border-radius: 50px;
+    color: rgb(93, 132, 110);
+    background-color: rgb(231, 247, 160);
+    width: 39%;
+    padding: 1% 1% 1% 1%;
+    font-size: 15px;
+}
+
+option { /* Propriétés des options des listes déroulantes du simulateur, style de texte*/
+    font-weight: bold;
+}
+
+button { /* Propriétés du bouton du simulateur, largeur de 15%, marge de 42.5% à gauche et à droite, marge de 3.5% en haut, curseur en forme de main, couleur de fond, marges intérieures de 1% autour, arrondissement des bordures*/
+    width: 15%;
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    margin-top: 3.5%;
+    cursor: pointer;
+    padding: 1% 1% 1% 1%;
+    background-color: rgb(240, 187, 87);
+    border-radius: 10px;
+} 
+
+.imgSimuOff { /* Propriétés de l'image du simulateur désactivée, ne l'affiche pas*/
+    display: none;
+}
+
+.imgSimuOn { /* Propriétés de l'image du simulateur activée, affiche l'image même avec la class "imgSimuOff, largeur de 50%, marges de 5% en haut 25% à droite et 25% à gauche*/
+    display: block !important;
+    width: 50%;
+    margin: 5% 25% 0 25%;
+}
+
+.divPDV { /* Propriétés des blocs contenant les sélecteurs page 3, manière de s'alligner, largeur de 33.1%, alignement du texte*/
+    display: inline-block;
+    width: 33.1%;
+    text-align: center;
+}
+
+label {    /* Propriétés des labels des sélecteurs page 3, taille de texte*/
+    font-size: 18px;
+}
+
+.imgTableau:hover{ /* Propriétés des images page 5 au survol de la souris, transition de 0.3s, opacité de 0.65, curseur en forme de main*/
+    opacity: 0.65;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.divPhoto { /* Propriétés des blocs contenant les images page 5, largeur de 25%, manière de s'alligner, marges de 3% en haut, 4.06% à droite et à gauche, 3% en bas*/
+    width:25%;
+    display: inline-block;
+    margin : 3% 4.03% 3% 4.03%;
+}
+
+#div1-overlay{ /* Propriétés de la div qui s'ouvre au clic sur l'image1, opacité de 0, position fixe, couleur de fond, transition de 0.3s, z-index de -1, alignement des éléments contenus*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div2-overlay{ /* même chose que pour la div1-overlay mais pour l'image2*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div3-overlay{ /* même chose que pour la div1-overlay mais pour l'image3*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+#div4-overlay{ /* même chose que pour la div1-overlay mais pour l'image4*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div5-overlay{ /* même chose que pour la div1-overlay mais pour l'image5*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div6-overlay{ /* même chose que pour la div1-overlay mais pour l'image6*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div7-overlay{ /* même chose que pour la div1-overlay mais pour l'image7*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div8-overlay{ /* même chose que pour la div1-overlay mais pour l'image8*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div9-overlay{ /* même chose que pour la div1-overlay mais pour l'image9*/
+    opacity: 0;
+    position:fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divPortrait{ /* Propriétés des blocs contenant les images en portrait page 5, largeur de 47%, marges internes de 2% autour, couleur de fond, position absolue, centrage vertical et horizontal, arrondissement des bordures*/
+    width: 47%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff2e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.divPaysage{ /* Propriétés des blocs contenant les images en paysage page 5, largeur de 70%, marges internes de 2% autour, couleur de fond, position absolue, centrage vertical et horizontal, arrondissement des bordures*/
+    width: 65%;
+    padding: 2%;
+    box-sizing: border-box;
+    background: #fff2e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
+
+.imgPortraitDiv { /* Propriétés des images en portrait page 5, largeur de 55%, flottant à gauche, arrondissement des bordures*/
+    width:55%;
+    float: left;
+    border-radius: 10px;
+}
+
+.imgPaysageDiv { /* Propriétés des images en paysage page 5, largeur de 70%, flottant à gauche, arrondissement des bordures*/
+    width:70%;
+    float: left;
+    border-radius: 10px;
+}
+
+.pPortrait { /* Propriétés des paragraphes des images en portrait page 5, flottant à droite, largeur de 40%, marges internes 1.5% à droite et à gauche, taille de texte, alignement du texte, espacement des lignes*/
+    float: right;
+    width: 40%;
+    margin: 0 1.5% 0 1.5%;
+    padding:  0 0 0 0;
+    text-align: center;
+    font-size: 1.55em;
+    line-height: 2.5em;
+}
+
+.pPaysage { /* Propriétés des paragraphes des images en paysage page 5, flottant à droite, largeur de 18%, marges internes 5% à droite et à gauche, taille de texte, alignement du texte, espacement des lignes*/
+    float: right;
+    width: 18%;
+    padding: 0 0 0 0;
+    font-size: 1.25em;
+    margin : 0 5% 0 5%;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+#div1-overlay.open { /* Propriétés de la div qui s'ouvre au clic sur l'image1, opacité de 1, z-index de 999*/
+    opacity: 1;
+    z-index: 999;
+}
+#div2-overlay.open { /* même chose que pour la div1-overlay mais pour l'image2*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div3-overlay.open { /* même chose que pour la div1-overlay mais pour l'image3*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div4-overlay.open { /* même chose que pour la div1-overlay mais pour l'image4*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div5-overlay.open { /* même chose que pour la div1-overlay mais pour l'image5*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div6-overlay.open { /* même chose que pour la div1-overlay mais pour l'image6*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div7-overlay.open { /* même chose que pour la div1-overlay mais pour l'image7*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div8-overlay.open { /* même chose que pour la div1-overlay mais pour l'image8*/
+        opacity: 1;
+    z-index: 999;;
+}
+#div9-overlay.open { /* même chose que pour la div1-overlay mais pour l'image9*/
+        opacity: 1;
+    z-index: 999;;
+}
+
+.a1 { /* Propriétés des liens hypertextes des images page 5, couleur de texte, soulignement*/
+    color: rgb(59, 183, 197);
+    text-decoration: underline;
+}
+
+.divButton { /* Propriétés des blocs contenant les boutons des pop-up page 5, largeur de 15%, taille de texte, couleur de fond*/
+    width:15%;
+    font-size: 1.5em;
+    background: linear-gradient(to right, orange, rgb(252, 252, 124))
+}
+
+#img3 { /* Propriétés de l'image page 4, largeur de 60%, marges de 2% en haut, 20% à droite et à gauche*/
+    width: 60%;
+    margin: 2% 20% 0 20%;
+}
+
+@media (max-width: 1480px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 1480px*/
+    header div {
+        font-size: 0.8em;
+    }
+    .pPaysage {
+        font-size: 1.15em;
+    }
+}
+
+@media (max-width: 1255px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 1255px*/
+    header div {
+        font-size: 0.7em;
+    }
+    .divPDV {
+        width: 32%;
+    }
+    .divPortrait{
+        width: 55%;
+    }
+    .pPaysage {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1040px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 1040px*/
+    header div {
+        font-size: 0.6em;
+    }
+    .divPhoto {
+        width: 25%;
+        margin: 3% 4.015% 3% 4.015%;
+    }
+    .divPDV {
+        width: 100%;
+        margin-top: 2%;
+    }
+    .divPortrait{
+        width: 65%;
+    }
+    .pPaysage {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 900px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 900px*/
+    header div {
+        width:75%;
+        margin: 2% 12.2% 0 12.2%;
+    }
+    #article1 {
+        width: 100%;
+        float: none;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header h2 {
+        font-size:20px;
+        margin: 3% 0 0 0;
+    }
+    
+    article p {
+        font-size: 13px;
+        margin: 2% 0 0 0;
+    }
+    footer p {
+        font-size: 13px;
+        margin: 0 0 0 0;
+    }
+    #aside1 {
+        width: 100%;
+        float: none;
+        margin-top: 3%;
+    }
+    #img1 {
+        width: 50%;
+        margin: 0 25% 0 25%;
+    }
+    aside p {
+        text-align: center;
+    }
+    #section {
+       display:flex;
+        flex-direction: column-reverse; 
+    }
+    #article2 {
+        float: none;
+        width: 100%;
+    }
+    #aside2 {
+        float:none;
+        width:100%;
+        margin: 3% 0 1% 0;
+    }
+    #img2 {
+        width: 50%;
+        margin: 0 25% 0 25%;
+    }
+    button {
+        width: 30%;
+        margin: 3.5% 35% 0 35%;
+    }
+    .divPDV {
+        width: 100%;
+        margin-top: 2%;
+    }
+    #img3 {
+        width: 80%;
+        margin: 3% 10% 0 10%;
+    }
+    .divPhoto {
+        width: 50%;
+        margin : 10% 25% 0 25%;
+    }
+    .divPortrait{
+        width: 70%;
+    }
+    .divButton {
+        width:30%;
+        font-size: 1.25em;
+    }
+    .pPortrait {
+        font-size: 1.7em;
+    }
+    .divPaysage{
+        width: 80%;
+    }
+    .pPaysage {
+            font-size: 0.8em;
+            line-height: 1.2em;
+            float: none;
+            text-align: center;
+            width: 100%;
+            margin-left: 0;
+        }
+    .imgPaysageDiv {
+        float: none;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 977px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 977px*/
+    .pPortrait {
+        font-size: 1.5em;
+    }
+
+}
+@media screen and (max-width: 875px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 875px*/
+    .pPortrait{
+        font-size: 1.4em;
+    }
+
+}
+@media screen and (max-width: 675px) { /* Redéfinition des propriétés des éléments pour une largeur d'écran inférieure à 675px*/
+    .pPortrait{
+        font-size: 1em;
+    }
+
+}
+@media screen and (max-width: 550px) {
+    .pPortrait{
+        font-size: 0.75em;
+    }
+    .divPortrait{
+        width: 80%;
+        
+    }
+
+}

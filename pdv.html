@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> <!-- Tête du document-->
+    <meta charset="UTF-8"> <!-- Encodage du document-->
+    <title>La Photographie</title> <!-- Titre du site-->
+    <link type="text/css" rel="stylesheet" href="style.css"/> <!-- Lien vers la feuille de style-->
+    <script src="script.js" defer></script> <!-- Lien vers le script js-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Meta pour le que le responsive design marche bien-->
+</head>
+<body> <!-- Corps du document-->
+    <header>
+        <h1>La photographie</h1> <!-- Titre du site-->
+            <a href="index.html"> <!-- Lien vers la page index.html-->
+                <div> <!-- Div pour le menu-->
+                    <p>La photo(numérique), c'est quoi ?</p> <!-- Paragraphe-->
+                </div>
+            </a>
+            <a href="categories.html"> <!-- Lien vers la page categories.html-->
+                <div> <!-- Div pour le menu-->
+                    <p>Les différents types de photo</p> <!-- Paragraphe-->
+                </div>
+            </a>
+                <div id="divMenu"> <!-- Div pour le menu-->
+                    <p>Les réglages de prise de vue</p> <!-- Paragraphe-->
+                </div>
+            <a href="format.html"> <!-- Lien vers la page format.html-->
+                <div> <!-- Div pour le menu-->
+                    <p>Le format du fichier et autres</p> <!-- Paragraphe-->
+                </div>
+            </a>
+            <a href="photothèque.html"> <!-- Lien vers la page photothèque.html-->
+                <div> <!-- Div pour le menu-->
+                    <p>Ma Photothèque !</p> <!-- Paragraphe-->
+                </div>
+            </a>
+            <h2>Les réglages de prise de vue</h2> <!-- Titre de la page-->
+    </header>
+    <article>
+        <p> <!-- Paragraphe-->
+            En photo il y a plusieurs réglages à effectuer pour obtenir l'image que l'on souhaite. Les plus importants sont ceux de l'exposition, l'exposition est la 
+            quantité de lumière qui va atteindre le capteur de l'appareil photo, elle est déterminée par trois paramètres (par ailleurs déjà mentionnés sur la page précédente)
+            : la vitesse d'obturation, l'ouverture et la sensibilité ISO.
+            La vitesse d'obturation est la durée pendant laquelle l'obturateur laisse entrer la lumière et prend la photo, elle est exprimée en secondes ou en fractions
+             de secondes. PLus elle est élevée et plus le mouvement est figé (pas de flou) et moins il y a de lumière. Plus elle est basse et plus le mouvement est flou
+            et plus il y a de lumière.
+            L'ouverture est la taille de l'ouverture de l'objectif, elle est exprimée en f/ suivit d'un chiffre. Plus le chiffre est grand et plus l'ouverture est petite
+            et moins il y a de lumière et de flou d'arrière plan (aussi appelé bokeh). Plus le chiffre est petit et plus l'ouverture est grande et plus il y a de lumière
+            et de flou d'arrère plan.
+            d'obturation.
+            <br> Pour mieux comprendre je vous propose un simulateur d'exposition où vous pourrez voir les effets de ces trois paramètres sur une photo en les changeant.
+        </p>
+    </article>
+    <footer>
+        <h2 id="titreSimu">Simulateur d'exposition:</h2> <!-- Titre du simulateur-->
+        <div class="divPDV"> <!-- Div pour les paramètres de vitesse d'obturation-->
+            <label for="vitesse">Vitesse d'obturation:</label> <!-- Label pour la vitesse d'obturation-->
+            <select id="valeurVitesse">  <!-- Select pour la vitesse d'obturation-->  
+                <option>Sélectionner une valeur</option>
+                <option value="1/250">1/250s</option> <!-- Option pour la vitesse d'obturation-->
+                <option value="1/2000">1/2000s</option> <!-- Option pour la vitesse d'obturation-->
+            </select>
+        </div>
+        <div class="divPDV">  <!-- Div pour les paramètres d'ouverture-->
+            <label for="ouverture">Ouverture:</label>  <!-- Label pour l'ouverture-->
+            <select id="valeurF"> <!-- Select pour l'ouverture-->   
+                <option>Sélectionner une valeur</option>
+                <option value="F4">F/4</option> <!-- Option pour l'ouverture-->
+                <option value="F22">F/22</option> <!-- Option pour l'ouverture-->
+            </select>
+        </div>
+        <div class="divPDV"> <!-- Div pour les paramètres de sensibilité ISO-->
+            <label for="ISO">Sensibilité ISO:</label> <!-- Label pour la sensibilité ISO-->
+            <select id="valeurIso"> <!-- Select pour la sensibilité ISO-->
+                <option>Sélectionner une valeur</option>
+                <option value="ISO100">ISO100</option> <!-- Option pour la sensibilité ISO-->
+                <option value="ISO3200">ISO3200</option>    <!-- Option pour la sensibilité ISO-->
+            </select>
+        </div>
+        <br>
+        <button>
+            Résultat
+        </button>
+        <img id="imgSimuA" class="imgSimuOff" src="Photos simu/IMG_4440.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuB" class="imgSimuOff" src="Photos simu/IMG_4439.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuC" class="imgSimuOff" src="Photos simu/IMG_4441.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuD" class="imgSimuOff" src="Photos simu/IMG_4438.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuE" class="imgSimuOff" src="Photos simu/IMG_4433.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuF" class="imgSimuOff" src="Photos simu/IMG_4436.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuG" class="imgSimuOff" src="Photos simu/IMG_4435.JPG"/> <!-- Image pour le simulateur-->
+        <img id="imgSimuH" class="imgSimuOff" src="Photos simu/IMG_4437.JPG"/> <!-- Image pour le simulateur-->
+    </footer>
+</body>
+</html>
