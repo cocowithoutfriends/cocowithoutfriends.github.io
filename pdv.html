@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>La Photographie</title>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>La photographie</h1>
+            <a href="index.html">
+                <div>
+                    <p>La photo(numérique), c'est quoi ?</p>
+                </div>
+            </a>
+            <a href="categories.html">
+                <div>
+                    <p>Les différents types de photo</p>
+                </div>
+            </a>
+                <div id="divMenu">
+                    <p>Les réglages de prise de vue</p>
+                </div>
+            <a href="format.html">
+                <div>
+                    <p>Le format du fichier et autres</p>
+                </div>
+            </a>
+            <a href="photothèque.html">
+                <div>
+                    <p>Ma Photothèque !</p>
+                </div>
+            </a>
+            <h2>Les réglages de prise de vue</h2>
+    </header>
+    <article>
+        <p>
+            En photo il y a plusieurs réglages à effectuer pour obtenir l'image que l'on souhaite. Les plus importants sont ceux de l'exposition, l'exposition est la 
+            quantité de lumière qui va atteindre le capteur de l'appareil photo, elle est déterminée par trois paramètres (par ailleurs déjà mentionnés sur la page précédente)
+            : la vitesse d'obturation, l'ouverture et la sensibilité ISO.
+            La vitesse d'obturation est la durée pendant laquelle l'obturateur laisse entrer la lumière et prend la photo, elle est exprimée en secondes ou en fractions
+             de secondes. PLus elle est élevée et plus le mouvement est figé (pas de flou) et moins il y a de lumière. Plus elle est basse et plus le mouvement est flou
+            et plus il y a de lumière.
+            L'ouverture est la taille de l'ouverture de l'objectif, elle est exprimée en f/ suivit d'un chiffre. Plus le chiffre est grand et plus l'ouverture est petite
+            et moins il y a de lumière et de flou d'arrière plan (aussi appelé bokeh). Plus le chiffre est petit et plus l'ouverture est grande et plus il y a de lumière
+            et de flou d'arrère plan.
+            d'obturation.
+            <br> Pour mieux comprendre je vous propose un simulateur d'exposition où vous pourrez voir les effets de ces trois paramètres sur une photo en les changeant.
+        </p>
+    </article>
+    <footer>
+        <h2 id="titreSimu">Simulateur d'exposition:</h2>
+        <div class="divPDV">
+            <label for="vitesse">Vitesse d'obturation:</label>
+            <select id="valeurVitesse">   
+                <option>Sélectionner une valeur</option>
+                <option value="1/250">1/250s</option>
+                <option value="1/2000">1/2000s</option>
+            </select>
+        </div>
+        <div class="divPDV">
+            <label for="ouverture">Ouverture:</label>
+            <select id="valeurF">   
+                <option>Sélectionner une valeur</option>
+                <option value="F4">F/4</option>
+                <option value="F22">F/22</option>
+            </select>
+        </div>
+        <div class="divPDV">
+            <label for="ISO">Sensibilité ISO:</label>
+            <select id="valeurIso">
+                <option>Sélectionner une valeur</option>
+                <option value="ISO100">ISO100</option>
+                <option value="ISO3200">ISO3200</option>
+            </select>
+        </div>
+        <br>
+        <button>
+            Résultat
+        </button>
+        <img id="imgSimuA" class="imgSimuOff" src="Photos simu/IMG_4440.JPG"/>
+        <img id="imgSimuB" class="imgSimuOff" src="Photos simu/IMG_4439.JPG"/>
+        <img id="imgSimuC" class="imgSimuOff" src="Photos simu/IMG_4441.JPG"/>
+        <img id="imgSimuD" class="imgSimuOff" src="Photos simu/IMG_4438.JPG"/>
+        <img id="imgSimuE" class="imgSimuOff" src="Photos simu/IMG_4433.JPG"/>
+        <img id="imgSimuF" class="imgSimuOff" src="Photos simu/IMG_4436.JPG"/>
+        <img id="imgSimuG" class="imgSimuOff" src="Photos simu/IMG_4435.JPG"/>
+        <img id="imgSimuH" class="imgSimuOff" src="Photos simu/IMG_4437.JPG"/>
+    </footer>
+</body>
+</html>
